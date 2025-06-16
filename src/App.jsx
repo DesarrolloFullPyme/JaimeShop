@@ -1,21 +1,18 @@
 import { useState } from 'react'
-import Login from '../components/Login'
+import Login from './components/login/Login'
 import './App.css'
+import {Home} from './pages/home/Home'
+import CardProduct from './components/card/CardProduct'
 
 function App() {
-  const [loggedIn, setLoggedIn ] = useState(false)
-
+  
+  
   return (
     <>
-     <div>
-      {loggedIn ? (
-        <h1>Bienvenido al panel administrativo</h1>
-      ) : (
-        <Login onLogin={() => setLoggedIn(true)}/>
-      )}
-     </div>
+      <Home />
     </>
+    
   )
 }
 
-export default App
+export default App;
