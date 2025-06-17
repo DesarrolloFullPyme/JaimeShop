@@ -2,16 +2,19 @@ import { useState } from 'react'
 import Login from './components/login/Login'
 import './App.css'
 import {Home} from './pages/home/Home'
-import CardProduct from './components/card/CardProduct'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { DetalleProducto } from './pages/detalleProducto/DetalleProducto'
 
 function App() {
   
   
   return (
-    <>
-      <Home />
-    </>
-    
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/product/:id' element={<DetalleProducto />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

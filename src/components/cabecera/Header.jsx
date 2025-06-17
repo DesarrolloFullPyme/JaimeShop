@@ -19,8 +19,8 @@ export const Header = () => {
             <a className='nav-link' href="#"></a>
 
            <div className='input-group w-50 border'>
-            <input class="form-control me-2" type="search" placeholder="Buscar Producto..." aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+            <input className='form-control me-2' type="search" placeholder="Buscar Producto..." aria-label="Search"/>
+            <button className='btn btn-outline-success' type="submit">BUSCAR</button>
           </div>
         </nav>
     </header>
