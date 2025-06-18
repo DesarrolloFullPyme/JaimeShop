@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { Header } from '../../components/cabecera/Header';
 import { Galeria } from '../../components/productDetail/Galeria';
 import { InfoDetalle } from '../../components/productDetail/InfoDetalle';
 import {SelectorTallas} from '../../components/productDetail/SelectorTallas';
 import { SelectorContador } from '../../components/productDetail/SelectorContador';
+import { CarroContext } from '../../context/CarroProvider';
+import { Footer } from '../../components/piesDePaginado/footer';
 
 
 
 export const DetalleProducto = () => {
-
+  const {listaProductos }= useContext(CarroContext);
+  
   const {id} =useParams();
-  const product = listaProduct.find(p => p.id === parseInt(id));
+  const product = listaProductos.find(p => p.id === parseInt(id));
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
 
@@ -24,7 +27,7 @@ export const DetalleProducto = () => {
     <div className='container mt-4'>
       <div className='row'>
         <div className='col-md-6'>
-          <Galeria image={product.image}/>
+          <Galeria foto={product.image}/>
         </div>
         <div className='col-md-6'>
           <InfoDetalle  title={product.title} price={product.priceOne} description={product.descripcion}/>
@@ -39,6 +42,7 @@ export const DetalleProducto = () => {
         </div>
       </div>
     </div>
+    <Footer />
     </>
   )
 }

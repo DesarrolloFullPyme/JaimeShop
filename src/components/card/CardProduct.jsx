@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 import { Link } from "react-router-dom";
 
+export const CardProduct = (props) => {
 
-function CardProduct(props) {
   return (
     <div className="card text-center border">
       <Link to={`/product/${props.id}`} className="text-decoration-none text-dark">
@@ -14,10 +14,7 @@ function CardProduct(props) {
       </Link>
       <button className="btn btn-secondary m-2" onClick={props.onAddToCart}>{props.buttonLabel || "Agregar al carrito"}</button>
     </div>
-  
   )
 }
-
-export default CardProduct;
 
 

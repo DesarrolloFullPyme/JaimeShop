@@ -6,7 +6,7 @@ export const InfoDetalle = ({title, price, description}) => {
         <h1>Informacion Detalle</h1>
 
         <h2>{title}</h2>
-        <h3 className='text-danger'>{price.toLocalString()}</h3>
+        <h3 className='text-danger'>{price}</h3>
         <p>*Precio sin IVA, sin envío</p>
         <p>{description}</p>
     </div>
