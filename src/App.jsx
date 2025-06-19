@@ -5,6 +5,7 @@ import {Home} from './pages/home/Home'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { DetalleProducto } from './pages/detalleProducto/DetalleProducto'
 import CarroProvider from './context/CarroProvider'
+import { ListaProductos} from './pages/listaProductos/ListaProductos'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/product/:id' element={<DetalleProducto />} />
+        <Route path='/productoslistado' element={<ListaProductos/>} />
       </Routes>
       </BrowserRouter>
     </CarroProvider>
