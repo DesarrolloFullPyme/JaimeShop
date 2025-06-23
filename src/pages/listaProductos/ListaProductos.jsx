@@ -26,13 +26,13 @@ export const ListaProductos = () => {
       
       <ul class="nav nav-tabs nav-underline flex-column justify-content-start">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" role='button' href="#">Producto</a>
+          <a class="nav-link active" aria-current="page" role='button' href="collares">COLLARES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" role='button' href="#">Categoria</a>
+          <a class="nav-link active" aria-current="page" role='button' href="anillos">ANILLOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" role='button' href="#">Filtro</a>
+          <a class="nav-link active" aria-current="page" role='button' href="brazaletes">BRAZALETES</a>
         </li>
       </ul>
       <div className='row justify-content-evenly'>

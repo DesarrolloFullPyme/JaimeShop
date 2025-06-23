@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { DetalleProducto } from './pages/detalleProducto/DetalleProducto'
 import CarroProvider from './context/CarroProvider'
 import { ListaProductos} from './pages/listaProductos/ListaProductos'
+import { Nosotros } from './pages/nosotros/Nosotros'
 
 function App() {
   
@@ -15,8 +16,10 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path='/product/:id' element={<DetalleProducto />} />
         <Route path='/productoslistado' element={<ListaProductos/>} />
+        <Route path='/nosotros' element={<Nosotros />} />
       </Routes>
       </BrowserRouter>
     </CarroProvider>
