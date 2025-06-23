@@ -4,12 +4,14 @@ import { Header } from '../../components/cabecera/Header'
 import { ListaProduct } from '../../components/listaProductos/ListaProduct'
 import { Footer } from '../../components/piesDePaginado/footer'
 import { Banner } from '../../components/imagenbanner/Banner'
+import { Navbar } from '../../components/navbar/Navbar'
 
 export const ListaProductos = () => {
   return (
     <div className='container mt-4   border text-center'>
       <h4>Lista Productos</h4>
       <Header />
+      <Navbar />
       <Banner />
          <nav aria-label="Page navigation example border">
         <ul class="pagination">

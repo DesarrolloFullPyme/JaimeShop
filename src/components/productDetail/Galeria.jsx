@@ -2,8 +2,7 @@ import React from 'react'
 
 export const Galeria = ({foto}) => {
   return (
-    <div>
-        <h1>Galeria</h1>
+    <div className='border p-3 mb-3'>
         <div className='mb-3'>
 
             <img src={foto} alt="Producto" className='img-fluid rounded' />
