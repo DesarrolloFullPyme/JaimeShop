@@ -4,7 +4,7 @@ import { Header } from '../../components/cabecera/Header'
 import { ListaProduct } from '../../components/listaProductos/ListaProduct'
 import { Footer } from '../../components/piesDePaginado/footer'
 import { Banner } from '../../components/imagenbanner/Banner'
-import { Navbar } from '../../components/navbar/Navbar'
+import { Navbar } from '../../components/cabecera/Navbar'
 
 export const ListaProductos = () => {
   return (
