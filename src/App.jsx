@@ -8,7 +8,6 @@ import CarroProvider from './context/CarroProvider'
 import { ListaProductos} from './pages/listaProductos/ListaProductos'
 import { Nosotros } from './pages/nosotros/Nosotros'
 
-
 function App() {
   
   

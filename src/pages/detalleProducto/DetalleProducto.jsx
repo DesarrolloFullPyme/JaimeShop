@@ -6,9 +6,8 @@ import { InfoDetalle } from '../../components/productDetail/InfoDetalle';
 import {SelectorTallas} from '../../components/productDetail/SelectorTallas';
 import { SelectorContador } from '../../components/productDetail/SelectorContador';
 import { CarroContext } from '../../context/CarroProvider';
-import { Footer } from '../../components/piesDePaginado/footer';
 import { Navbar } from '../../components/cabecera/Navbar';
-
+import { Footer } from '../../components/piesDePaginado/Footer';
 
 export const DetalleProducto = () => {
   const {listaProductos }= useContext(CarroContext);

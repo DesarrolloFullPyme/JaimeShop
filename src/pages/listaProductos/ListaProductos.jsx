@@ -2,9 +2,9 @@
 import React from 'react'
 import { Header } from '../../components/cabecera/Header'
 import { ListaProduct } from '../../components/listaProductos/ListaProduct'
-import { Footer } from '../../components/piesDePaginado/footer'
 import { Banner } from '../../components/imagenbanner/Banner'
 import { Navbar } from '../../components/cabecera/Navbar'
+import { Footer } from '../../components/piesDePaginado/Footer'
 
 export const ListaProductos = () => {
   return (
@@ -39,7 +39,6 @@ export const ListaProductos = () => {
         <ListaProduct />
       </div>
       </div>
-      
       <Footer />
     </div>
   )
