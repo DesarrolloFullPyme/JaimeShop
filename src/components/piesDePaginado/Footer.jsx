@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className='border'>Footer</div>
+    <div className='container border'>Footer</div>
   )
 }

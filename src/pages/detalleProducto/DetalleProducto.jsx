@@ -25,7 +25,7 @@ export const DetalleProducto = () => {
     <>
     <Header />
     <Navbar />
-    <div className='container mt-4 border p-3'>
+    <div className='container mt-4  p-3'>
       <div className='row'>
         <div className='col-md-6'>
           <Galeria foto={product.image}/>
@@ -37,7 +37,7 @@ export const DetalleProducto = () => {
 
           <SelectorContador quantity={quantity} setQuantity={setQuantity}/>
         </div>
-        <div className='mt-3 border p-3 text-center justify-content-end d-flex'>
+        <div className='mt-3  p-3 text-center justify-content-end d-flex'>
           <button className='btn btn-secondary me-2'>AGREGAR AL CARRITO</button>
           <button className='btn btn-primary'>COMPRAR AHORA</button>
         </div>

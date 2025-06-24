@@ -9,7 +9,7 @@ export const ListaProduct = () => {
   
   
   return (
-    <div className='row  row-cols-1 row-cols-lg-3  g-2 border justify-content-start'>
+    <div className='row  row-cols-1 row-cols-lg-3  g-2  justify-content-start'>
       {listaProductos.map((item) => (
         <div className='col text-center p-2' key={item.id}>
           <CardProduct 
